@@ -25,7 +25,7 @@ resource "aws_instance" "tf-ec2" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = var.instance_type
   key_name      = var.key_name
-  subnet_id =  var.subnet_id
+  subnet_id =   var.subnet_id
 
   tags = {
     Name = var.name

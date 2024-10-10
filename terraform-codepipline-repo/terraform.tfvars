@@ -1,4 +1,4 @@
-key_name       = "achintha-tf"
+key_name       = "kp-instance"
 instance_type = "t2.micro"
 aws_region = "us-east-1"
 name="tf-ec2-new-test"
