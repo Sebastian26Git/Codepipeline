@@ -10,6 +10,20 @@ provider "aws" {
   region = var.aws_region
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.26.0"
+    }
+
+    http = {
+      source  = "hashicorp/http"
+      version = "2.1.0"
+    }
+  }
+}
+
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]
