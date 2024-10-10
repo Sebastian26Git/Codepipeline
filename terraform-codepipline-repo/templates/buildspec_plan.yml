@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     CODE_SRC_DIR: "."
-    TF_VERSION: "1.6.4"
+    #TF_VERSION: "1.6.4"
 
 phases:
   install:
@@ -15,7 +15,7 @@ phases:
       - "yum -y install terraform"
   build:
     commands:
-      - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
+      - "cd Codepipele/terraform-codepipline-repo"
       - "terraform init"
       - "echo ## TERRAFORM PLAN : Generate the Terraform Plan"
       - "terraform plan"
