@@ -1,5 +1,5 @@
 key_name       = "kp-instance"
 instance_type = "t2.micro"
 aws_region = "us-east-1"
-name="instance-codepipeline"
+name="instance-test-trigger"
 subnet_id = "subnet-01aaeac3afc7aa727"
